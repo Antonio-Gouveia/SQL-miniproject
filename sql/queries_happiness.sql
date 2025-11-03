@@ -1,6 +1,6 @@
 use happiness_data;
 
--- Felicidade e Inovação: os países mais inovadores são também os mais felizes?
+-- Happiness and Innovation: more innovative countries are also the happiest?
 SELECT
     h.Country AS Happiness_Country,
     h.Score AS Happiness_Score_2015,
@@ -19,11 +19,11 @@ ORDER BY
 LIMIT 15;
 
 
--- PIB, Inovação e Felicidade
+-- GDP, Innovation e Happiness
 SELECT
     h.Country AS Country,
     h.Score AS Happiness_score,
-    h.GDP_per_capita AS PIB_Per_Capita, -- Adicionado
+    h.GDP_per_capita AS GDP_Per_Capita,
     i.Score_2015 AS Innovation_score,
     i.Rank_2015 AS Innovation_rank
 FROM
@@ -39,7 +39,7 @@ ORDER BY
 LIMIT 15;
 
 
--- AVG of values in from 2011 to 2020
+-- Total AVG of values from 2011 to 2020
 SELECT 
     ROUND(AVG(h.score),2) AS avg_happiness,
     ROUND(AVG((i.Score_2011 + i.Score_2012 +i.Score_2013+i.Score_2014+i.Score_2015+i.Score_2016+
@@ -53,7 +53,7 @@ join innovation_score i
 on i.code = gp.code;
 
 
--- for each country
+-- For each country
 CREATE OR REPLACE VIEW combined_data AS
 SELECT 
     h.country,
@@ -73,7 +73,7 @@ select *
 from combined_data;
 
 
--- list of countries more then happiness avg
+-- List of countries more then happiness avg
 
 SELECT 
     h.country,
@@ -94,13 +94,13 @@ having avg_happiness > (
 FROM happiness_scores h
 );
 
-
--- put everything together
+-- List of countries ordered by each of the factor
 SELECT * from combined_data order by avg_happiness desc;
 SELECT * from combined_data order by avg_innovation desc;
 SELECT * from combined_data order by avg_GDP_percapita desc;
 
 
+-- Statistics for each factor
 SELECT
     MIN(avg_happiness) AS min_happiness,
     MAX(avg_happiness) AS max_happiness,
