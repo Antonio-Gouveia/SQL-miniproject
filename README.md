@@ -66,7 +66,7 @@ Indicator of Individual Productivity
 
 🧮 Entity Relationship Diagram (ERD)
 
-![alt text](erd.png)
+![alt text](sql/erd.png)
 
 The database, named happiness_data, contains four main tables linked by the common key: country.
 
