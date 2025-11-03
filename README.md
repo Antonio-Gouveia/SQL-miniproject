@@ -105,4 +105,18 @@ António Gouveia & Sofia Scomazzon
 
 📁 Repository Structure
 
-SQL-miniproject/ ├── raw/                         # Cleaned CSV files ├── sql/                         # SQL scripts │   ├── create_happiness_database.sql │   ├── queries_happiness_data.sql │   └── diagram.sql ├── python/                      # Python script for data cleaning and visualization │   └── data_cleaning_and_visuals.py ├── presentation/                # Final presentation slides │   └── final_presentation.pptx └── README.md                    # Project documentation
+## 📁 Repository Structure
+
+```
+SQL-miniproject/
+├── data                         # Cleaned CSV files
+├── sql/                         # SQL scripts
+│   ├── happiness_data.sql
+│   ├── queries_happiness.sql
+│   └── model.mwb.bak
+├── python/                      # Python script for data cleaning and visualization
+│   └── data_cleaning_and_visuals.py
+├── presentation/                # Final presentation slides
+│   └── final_presentation.pptx
+└── README.md                    # Project documentation
+```
