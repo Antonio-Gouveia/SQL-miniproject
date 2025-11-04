@@ -4,7 +4,7 @@
 
 ## 🧭 Overview
 
-This project challenges the traditional economic paradigm by exploring the relationship between National Wellbeing (Happiness Score), Innovation (Innovation score) and Economic erformance (GDP) across various countries.
+This project challenges the traditional economic paradigm by exploring the relationship between National Wellbeing (Happiness Score), Innovation (Innovation score) and Economic performance (GDP) across various countries.
 
 The central hypothesis is that ations with superior scores in overall Happiness demonstrate proportionally higher scores in Innovation, suggesting that a thriving environment of well-being, trust, and social support acts as a more powerful catalyst for creative output than economic metrics alone. Simply put: Happier nations are fundamentally more innovative nations.
 
@@ -30,7 +30,7 @@ Four key datasets were used to build a comprehensive analytical structure. Each 
 
 🔹 happiness_score --> Measures the level of national happiness and social support based on global surveys.
 
-🔹innovation_score -- >Tracks national innovation performance through global indices.
+🔹 innovation_score --> Tracks national innovation performance through global indices.
 
 🔹 gdp --> Represents each country’s total economic output (Gross Domestic Product).
 
@@ -72,7 +72,7 @@ Loaded the cleaned datasets into the corresponding tables.
 
 Wrote and executed multi-join SQL queries to:
 
-🔹 Join all datasets. to combine and unify tables. In coding, this uses JOIN (e.g., INNER, LEFT) or UNION (to stack them).
+🔹 Join all datasets to combine and unify tables. In coding, this uses JOIN (e.g., INNER, LEFT) or UNION (to stack them).
 
 🔹 Order by metrics to identify the leaders. This uses the ORDER BY clause (often with DESC for descending).
 
@@ -96,7 +96,7 @@ Created visualizations (Scatter Plots, Correlation Heatmaps, Bar Charts) to illu
 
 ## 📊 Key Insights 
 
-The analysis of rank correlation reveals that achieving top-tier Innovation is not solely a function of financial might but is highly dependent on a nation's Well-being factors.While GDP per capita holds the strongest direct link to Innovation (0.67), the connection between Happiness and Innovation (0.51) is surprisingly robust. This correlation of $0.51$ suggests that a nation's collective well-being—which incorporates elements like social support, healthy life expectancy, and trust—is nearly as important as a strong economy when it comes to predicting innovation leadership.In short:Innovation requires both: A nation needs the resources (GDP) to fund research and development, and the right environment (Happiness/Trust/Health) to foster creativity and risk-taking.The Interconnection is Key: The high positive correlations across all three metrics demonstrate that success is holistic. Top-ranked nations have figured out the synergy: they use their wealth to secure the foundational well-being (health, social trust) that, in turn, fuels their capacity for innovation. Innovation is not just driven by dollars; it's driven by the citizens who are healthy, supported, and happy enough to invent the future.
+The analysis of rank correlation reveals that achieving top-tier Innovation is not solely a function of financial might but is highly dependent on a nation's Well-being factors. While GDP per capita holds the strongest direct link to Innovation (0.67), the connection between Happiness and Innovation (0.51) is surprisingly robust. This correlation of $0.51$ suggests that a nation's collective well-being—which incorporates elements like social support, healthy life expectancy, and trust—is nearly as important as a strong economy when it comes to predicting innovation leadership. In short: Innovation requires both: A nation needs the resources (GDP) to fund research and development, and the right environment (Happiness/Trust/Health) to foster creativity and risk-taking. The Interconnection is Key: The high positive correlations across all three metrics demonstrate that success is holistic. Top-ranked nations have figured out the synergy: they use their wealth to secure the foundational well-being (health, social trust) that, in turn, fuels their capacity for innovation. Innovation is not just driven by dollars; it's driven by the citizens who are healthy, supported, and happy enough to invent the future.
 
 
 
